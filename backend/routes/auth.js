@@ -102,5 +102,16 @@ router.put("/user/password/:id", async (req, res) => {
   });
 });
 
+//donate
+router.post('/donate/:projectId', async (req, res) => {
+  const { amount } = req.body;
+  const userId = req.user.id;
+
+  // TODO: Store donation in DB or trigger payment API (like Stripe/Razorpay)
+  console.log(`User ${userId} donated ₹${amount}`);
+
+  res.status(200).json({ message: `Thank you! ₹${amount} donated successfully.` });
+});
+
 
 module.exports = router;
