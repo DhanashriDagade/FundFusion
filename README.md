@@ -21,3 +21,4 @@ FundFusion is a full-stack crowdfunding web application built using the **MERN s
 - **Authentication**: JWT, bcrypt.js  
 - **APIs**: RESTful APIs
   
+🎥 [Watch Demo Video](funfusion.mp4)
